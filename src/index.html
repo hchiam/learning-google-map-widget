@@ -16,5 +16,9 @@
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script type="text/javascript">
+      var browserLanguage = navigator.language || navigator.userLanguage;
+      document.querySelector("html").setAttribute("lang", browserLanguage);
+    </script>
   </body>
 </html>
